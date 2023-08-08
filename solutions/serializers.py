@@ -1,6 +1,6 @@
 from rest_framework.serializers import ModelSerializer
 
-from solutions.models import  Cliente, Funcionario, Ferramenta
+from solutions.models import  Cliente, Funcionario, Ferramenta, ItemEstoque
 
 class ClienteSerializer(ModelSerializer):
     class Meta:
