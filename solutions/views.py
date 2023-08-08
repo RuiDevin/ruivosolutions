@@ -16,5 +16,5 @@ class FerramentaViewSet(ModelViewSet):
     serializer_class = FerramentaSerializer
 
 class ItemEstoqueViewSet(ModelViewSet):
-    querset = ItemEstoque.objects.all
+    queryset = ItemEstoque.objects.all()
     serializer_class = ItemEstoqueSerializer
