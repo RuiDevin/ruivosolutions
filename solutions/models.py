@@ -41,7 +41,7 @@ class Cliente(models.Model):
 
 
 class Caixa(models.Model):
-    descricao = models.CharField(max_length=100)
+    descricao = models.CharField(max_length=100, default=0)
     gastos = models.DecimalField(max_digits=10, decimal_places=2, default=0)
     lucros = models.DecimalField(max_digits=10, decimal_places=2, default=0)
 
