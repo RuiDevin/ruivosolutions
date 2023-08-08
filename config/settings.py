@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "django_extensions",
     "solutions",
     "rest_framework",
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
@@ -124,3 +125,10 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
+]
+
+CORS_ALLOW_ALL_ORIGINS = True
